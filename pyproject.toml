@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "llm-resources"
+version = "0.1.0"
+description = ""
+authors = ["jlondonobo <j.londonobo@gmail.com>"]
+readme = "README.md"
+packages = [{include = "llm_resources"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+llama-index = "^0.8.33"
+langchain = "^0.0.302"
+chromadb = "^0.4.13"
+pandas = "<=2.1.1"
+sentence-transformers = "^2.2.2"
+python-dotenv = "^1.0.0"
+
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.25.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
